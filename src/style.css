@@ -1,0 +1,73 @@
+.notes-textarea {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.notes-color-picker-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.notes-button {
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #007bff; /* Azul */
+  color: white;
+  cursor: pointer;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.notes-grid-item {
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.notes-grid-item.dark {
+  color: white;
+}
+
+.notes-grid-item.light {
+  color: black;
+}
+
+.delete-button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  color: #ef4444; /* Rojo */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .notes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .notes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .notes-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
